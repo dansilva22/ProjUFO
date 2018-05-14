@@ -21,12 +21,10 @@ public class UFOController : MonoBehaviour
     void Start()
     {
         //targetRotation = transform.rotation;
-        
-        //check if object has a rigidbody, prints if you do not
         if (GetComponent<Rigidbody>())
             rBody = GetComponent<Rigidbody>();
         else
-            Debug.LogError("NO RIGIDBODY FOOL");
+            Debug.LogError("Character needs a rigidbody.");
 
         forwardInput = turnInput = pitchInputDown = pitchInputUp = 0;
 
@@ -34,7 +32,6 @@ public class UFOController : MonoBehaviour
 
     void GetInput()
     {
-        //saves inputs into variables
         forwardInput = Input.GetAxis("Forward");
         turnInput = Input.GetAxis("Yaw");
         pitchInputUp = Input.GetAxis("PitchHoldDown");
@@ -64,6 +61,10 @@ public class UFOController : MonoBehaviour
         {
             //move it move it
             rBody.velocity = transform.forward * forwardInput * forwardVelocity;
+            //transform.eulerAngles += new Vector3(forwardInput, 0.0f, 0.0f);
+            //transform.Rotate(30 * Time.deltaTime, 0, 0); 
+            //targetRotation *= Quaternion.AngleAxis(rotateVelocity * turnInput * Time.deltaTime, Vector3.down);
+            //transform.rotation = targetRotation;
         }
         else
             // zero velocity
@@ -74,7 +75,10 @@ public class UFOController : MonoBehaviour
     {
         if (Mathf.Abs(turnInput) > inputDelay)
         {
-            // turns UFO after input delay
+            //transform.Rotate(0, 30 * Time.deltaTime, 0);
+            //targetRotation *= Quaternion.AngleAxis(rotateVelocity * turnInput * Time.deltaTime, Vector3.up);
+            //transform.eulerAngles += new Vector3(0.0f, turnInput, 0.0f);
+            //transform.rotation = targetRotation;
             rBody.AddTorque(Vector3.up * turnInput * 0.8f);
         }
         else
@@ -86,19 +90,33 @@ public class UFOController : MonoBehaviour
     {
         if (Mathf.Abs(pitchInputDown) > inputDelay)
         {
-            // pitches UFO up
+            //transform.Rotate(0, 30 * Time.deltaTime, 0);
+            //targetRotation *= Quaternion.AngleAxis(rotateVelocity * turnInput * Time.deltaTime, Vector3.up);
+            //transform.eulerAngles += new Vector3(forwardInput, 0.0f, 0.0f);
             rBody.rotation *= Quaternion.AngleAxis(rotateVelocity * pitchInputDown * Time.deltaTime, Vector3.right);
+            //rBody.AddTorque(Vector3.right * pitchInputDown * 0.5f);
+            //transform.rotation = targetRotation;
         }
+        //else
+        // zero velocity
+        //rBody.angularVelocity = Vector3.zero;
+
     }
 
     void PitchHoldNegative()
     {
         if (Mathf.Abs(pitchInputUp) > inputDelay)
         {
-            //pitches UFO down
+            //transform.Rotate(0, 30 * Time.deltaTime, 0);
+            //targetRotation *= Quaternion.AngleAxis(rotateVelocity * turnInput * Time.deltaTime, Vector3.up);
+            //transform.eulerAngles += new Vector3(-1 * forwardInput, 0.0f, 0.0f);
             rBody.rotation *= Quaternion.AngleAxis(rotateVelocity * pitchInputUp * Time.deltaTime, Vector3.left);
-            
+            //rBody.AddTorque(Vector3.back * pitchInputUp * 0.5f);
+            //transform.rotation = targetRotation;
 
         }
+        //else
+        // zero velocity
+        // rBody.angularVelocity = Vector3.zero;
     }
 }
