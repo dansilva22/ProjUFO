@@ -16,7 +16,10 @@ public class Enemy_Shot : MonoBehaviour {
 		//yield return new WaitForSeconds (1.5f);
         GameObject explosion;
 
-        explosion = Instantiate(prefab, transform.position, Quaternion.identity);
+        
+        for(int i =0; i < 5; i++){
+            explosion = Instantiate(prefab, transform.position, Quaternion.identity);
+        }
 		Destroy (this.gameObject);
 
         yield return null; 
