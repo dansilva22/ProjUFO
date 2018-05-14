@@ -21,10 +21,12 @@ public class UFOController : MonoBehaviour
     void Start()
     {
         //targetRotation = transform.rotation;
+
+        //says if the player needs a rigidbody
         if (GetComponent<Rigidbody>())
             rBody = GetComponent<Rigidbody>();
         else
-            Debug.LogError("Character needs a rigidbody.");
+            Debug.LogError("get a rigidbody fool");
 
         forwardInput = turnInput = pitchInputDown = pitchInputUp = 0;
 
@@ -32,11 +34,12 @@ public class UFOController : MonoBehaviour
 
     void GetInput()
     {
+        //parses input into variables
         forwardInput = Input.GetAxis("Forward");
         turnInput = Input.GetAxis("Yaw");
-        pitchInputUp = Input.GetAxis("PitchHoldDown");
-        pitchInputDown = Input.GetAxis("PitchHoldUp");
-        //pitches named wrongly right now because fucked up input axis, will fix later. Must swap PitchHolds in input manager
+        pitchInputDown = Input.GetAxis("PitchHoldDown");
+        pitchInputUp = Input.GetAxis("PitchHoldUp");
+     
     }
 
     void Update()
@@ -59,12 +62,8 @@ public class UFOController : MonoBehaviour
     {
         if (Mathf.Abs(forwardInput) > inputDelay)
         {
-            //move it move it
+            //move it move it forward using [w]
             rBody.velocity = transform.forward * forwardInput * forwardVelocity;
-            //transform.eulerAngles += new Vector3(forwardInput, 0.0f, 0.0f);
-            //transform.Rotate(30 * Time.deltaTime, 0, 0); 
-            //targetRotation *= Quaternion.AngleAxis(rotateVelocity * turnInput * Time.deltaTime, Vector3.down);
-            //transform.rotation = targetRotation;
         }
         else
             // zero velocity
@@ -75,10 +74,7 @@ public class UFOController : MonoBehaviour
     {
         if (Mathf.Abs(turnInput) > inputDelay)
         {
-            //transform.Rotate(0, 30 * Time.deltaTime, 0);
-            //targetRotation *= Quaternion.AngleAxis(rotateVelocity * turnInput * Time.deltaTime, Vector3.up);
-            //transform.eulerAngles += new Vector3(0.0f, turnInput, 0.0f);
-            //transform.rotation = targetRotation;
+            //turns dat jawn using [a] & [d] respectively
             rBody.AddTorque(Vector3.up * turnInput * 0.8f);
         }
         else
@@ -88,35 +84,20 @@ public class UFOController : MonoBehaviour
 
     void PitchHold()
     {
-        if (Mathf.Abs(pitchInputDown) > inputDelay)
+        if (Mathf.Abs(pitchInputUp) > inputDelay)
         {
-            //transform.Rotate(0, 30 * Time.deltaTime, 0);
-            //targetRotation *= Quaternion.AngleAxis(rotateVelocity * turnInput * Time.deltaTime, Vector3.up);
-            //transform.eulerAngles += new Vector3(forwardInput, 0.0f, 0.0f);
-            rBody.rotation *= Quaternion.AngleAxis(rotateVelocity * pitchInputDown * Time.deltaTime, Vector3.right);
-            //rBody.AddTorque(Vector3.right * pitchInputDown * 0.5f);
-            //transform.rotation = targetRotation;
-        }
-        //else
-        // zero velocity
-        //rBody.angularVelocity = Vector3.zero;
+            //pitches UFO up using [right click]
+            rBody.rotation *= Quaternion.AngleAxis(rotateVelocity * pitchInputUp * Time.deltaTime, Vector3.left);
 
+        }
     }
 
     void PitchHoldNegative()
     {
-        if (Mathf.Abs(pitchInputUp) > inputDelay)
+        if (Mathf.Abs(pitchInputDown) > inputDelay)
         {
-            //transform.Rotate(0, 30 * Time.deltaTime, 0);
-            //targetRotation *= Quaternion.AngleAxis(rotateVelocity * turnInput * Time.deltaTime, Vector3.up);
-            //transform.eulerAngles += new Vector3(-1 * forwardInput, 0.0f, 0.0f);
-            rBody.rotation *= Quaternion.AngleAxis(rotateVelocity * pitchInputUp * Time.deltaTime, Vector3.left);
-            //rBody.AddTorque(Vector3.back * pitchInputUp * 0.5f);
-            //transform.rotation = targetRotation;
-
+            //pitches UFO down using [left click]
+            rBody.rotation *= Quaternion.AngleAxis(rotateVelocity * pitchInputDown * Time.deltaTime, Vector3.right);
         }
-        //else
-        // zero velocity
-        // rBody.angularVelocity = Vector3.zero;
     }
 }
