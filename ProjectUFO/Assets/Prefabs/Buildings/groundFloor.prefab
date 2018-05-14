@@ -21,6 +21,8 @@ GameObject:
   - component: {fileID: 4637775909046526}
   - component: {fileID: 33193486064862592}
   - component: {fileID: 23537106980264734}
+  - component: {fileID: 65645923703956622}
+  - component: {fileID: 114995164302823042}
   m_Layer: 0
   m_Name: groundFloor
   m_TagString: Untagged
@@ -50,7 +52,6 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -69,7 +70,6 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -85,3 +85,27 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1926828000974338}
   m_Mesh: {fileID: 4300004, guid: 6e7931a153dd30247a725567bf1906ca, type: 3}
+--- !u!65 &65645923703956622
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1926828000974338}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.16396788, y: 0.17508805, z: 0.050453793}
+  m_Center: {x: 0.00009490177, y: -0.0067813047, z: 0.023697676}
+--- !u!114 &114995164302823042
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1926828000974338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74d46174d29268642b96dd8420e380e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 1982790171778374, guid: 28575c602fc64814d81bb594574d545f, type: 2}
