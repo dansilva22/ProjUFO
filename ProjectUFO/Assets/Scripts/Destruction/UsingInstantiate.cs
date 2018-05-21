@@ -18,7 +18,7 @@ public class UsingInstantiate : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
-        if(Input.GetButtonDown("Fire1"))
+        if(Input.GetButtonDown("Jump"))
         {
             //Rigidbody rocketInstance;
             GameObject bullet = Instantiate(missile, barrelEnd.position, barrelEnd.rotation) as GameObject;
