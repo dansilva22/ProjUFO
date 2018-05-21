@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Enemy_Shot : MonoBehaviour {
     public GameObject prefab;
+    public int scoreValue = 10;
 
 	public void GotShot() {
 
@@ -21,6 +22,9 @@ public class Enemy_Shot : MonoBehaviour {
             explosion = Instantiate(prefab, transform.position, Quaternion.identity);
         }
 		Destroy (this.gameObject);
+
+        // Increase the score by the enemy's score value.
+        ScoreManager.score += scoreValue;
 
         yield return null; 
 	}
