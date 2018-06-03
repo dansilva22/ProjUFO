@@ -48,6 +48,7 @@ public class UFOController : MonoBehaviour
         Turn();
         PitchHold();
         PitchHoldNegative();
+    
 
     }
 
@@ -100,4 +101,15 @@ public class UFOController : MonoBehaviour
             rBody.rotation *= Quaternion.AngleAxis(rotateVelocity * pitchInputDown * Time.deltaTime, Vector3.right);
         }
     }
+
+    //void OnCollisionEnter(Collision collision)
+    //{
+        //if (collision.gameObject.tag == "environment")
+        //{
+            //rBody.isKinematic = true;
+           // rBody.isKinematic = false;
+        //}
+
+
+   // }
 }
