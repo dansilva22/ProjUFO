@@ -1,0 +1,150 @@
+fileFormatVersion: 2
+guid: 80a9f8bad3e976843925817382c72559
+timeCreated: 1526266298
+licenseType: Free
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: Buttons
+    100002: Destroy_Button_Left
+    100004: Destroy_Button_Right
+    100006: Destroy_Buttons
+    100008: Gun_1
+    100010: Gun_2
+    100012: Guns
+    100014: Lever
+    100016: Lever 1
+    100018: Lever1
+    100020: Triangle_Button
+    100022: Triangle_Button1
+    100024: Triangle_Button2
+    100026: Triangle_Buttons
+    100028: UFO_Body
+    100030: UFO_Top
+    100032: //RootNode
+    400000: Buttons
+    400002: Destroy_Button_Left
+    400004: Destroy_Button_Right
+    400006: Destroy_Buttons
+    400008: Gun_1
+    400010: Gun_2
+    400012: Guns
+    400014: Lever
+    400016: Lever 1
+    400018: Lever1
+    400020: Triangle_Button
+    400022: Triangle_Button1
+    400024: Triangle_Button2
+    400026: Triangle_Buttons
+    400028: UFO_Body
+    400030: UFO_Top
+    400032: //RootNode
+    2300000: Destroy_Button_Left
+    2300002: Destroy_Button_Right
+    2300004: Gun_1
+    2300006: Gun_2
+    2300008: Lever 1
+    2300010: Lever1
+    2300012: Triangle_Button
+    2300014: Triangle_Button1
+    2300016: Triangle_Button2
+    2300018: UFO_Body
+    2300020: UFO_Top
+    3300000: Destroy_Button_Left
+    3300002: Destroy_Button_Right
+    3300004: Gun_1
+    3300006: Gun_2
+    3300008: Lever 1
+    3300010: Lever1
+    3300012: Triangle_Button
+    3300014: Triangle_Button1
+    3300016: Triangle_Button2
+    3300018: UFO_Body
+    3300020: UFO_Top
+    4300000: Gun_1
+    4300002: Gun_2
+    4300004: UFO_Body
+    4300006: UFO_Top
+    4300008: Triangle_Button
+    4300010: Triangle_Button1
+    4300012: Triangle_Button2
+    4300014: Lever
+    4300016: Lever1
+    4300018: Destroy_Button_Left
+    4300020: Destroy_Button_Right
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
