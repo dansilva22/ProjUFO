@@ -23,11 +23,15 @@ public class Enemy_Shot : MonoBehaviour {
             explosion = Instantiate(prefab, transform.position, Quaternion.identity);
         }
 		
-
-        for(int i = 0; i < scoreValue; i++)
+        if(scoreValue != 0)
         {
-            brains = Instantiate(prefab2, transform.position, Quaternion.identity);
+            for (int i = 0; i < scoreValue; i++)
+            {
+                brains = Instantiate(prefab2, transform.position, Quaternion.identity);
+            }
         }
+
+       
 
         Destroy(this.gameObject);
 
