@@ -12,7 +12,7 @@ public class collectMe : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-        flyToo = GameObject.FindWithTag("UFO");
+        flyToo = GameObject.FindWithTag("Player");
 
 
     }
@@ -29,9 +29,9 @@ public class collectMe : MonoBehaviour {
 
     public void OnCollisionEnter(Collision node)
     {
-        if (node.gameObject.tag == "UFO")
+        if (node.gameObject.tag == "Player")
         {
-            Destroy(node.gameObject);
+            Destroy(gameObject);
         }
     }
 }

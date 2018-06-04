@@ -150,8 +150,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1372078616229088}
-  m_LocalRotation: {x: -0, y: 0.38268453, z: -0, w: 0.9238791}
-  m_LocalPosition: {x: -137.90001, y: 52.94, z: 5.5}
+  m_LocalRotation: {x: -0, y: 0.7071065, z: -0, w: 0.7071072}
+  m_LocalPosition: {x: -166.2, y: 52.94, z: 170.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4830270643828982}
@@ -161,7 +161,7 @@ Transform:
   - {fileID: 4666840545071524}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 45.000004, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90.00001, z: 0}
 --- !u!4 &4512215058617360
 Transform:
   m_ObjectHideFlags: 1
@@ -574,7 +574,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 1982790171778374, guid: 28575c602fc64814d81bb594574d545f, type: 2}
-  prefab2: {fileID: 1872472323338388, guid: 3da48e01e8675a94795418783ea2277e, type: 2}
+  prefab2: {fileID: 1549430142212324, guid: 8efdcff03ca5b064dad8d366a6883818, type: 2}
   scoreValue: 10
 --- !u!114 &114264770511530884
 MonoBehaviour:
@@ -588,7 +588,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 1982790171778374, guid: 28575c602fc64814d81bb594574d545f, type: 2}
-  prefab2: {fileID: 1872472323338388, guid: 3da48e01e8675a94795418783ea2277e, type: 2}
+  prefab2: {fileID: 1549430142212324, guid: 8efdcff03ca5b064dad8d366a6883818, type: 2}
   scoreValue: 10
 --- !u!114 &114301597615025764
 MonoBehaviour:
@@ -614,7 +614,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 1982790171778374, guid: 28575c602fc64814d81bb594574d545f, type: 2}
-  prefab2: {fileID: 1872472323338388, guid: 3da48e01e8675a94795418783ea2277e, type: 2}
+  prefab2: {fileID: 1549430142212324, guid: 8efdcff03ca5b064dad8d366a6883818, type: 2}
   scoreValue: 10
 --- !u!114 &114596435061050030
 MonoBehaviour:
@@ -628,7 +628,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 1982790171778374, guid: 28575c602fc64814d81bb594574d545f, type: 2}
-  prefab2: {fileID: 1872472323338388, guid: 3da48e01e8675a94795418783ea2277e, type: 2}
+  prefab2: {fileID: 1549430142212324, guid: 8efdcff03ca5b064dad8d366a6883818, type: 2}
   scoreValue: 10
 --- !u!114 &114827655093196304
 MonoBehaviour:
@@ -642,7 +642,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 1982790171778374, guid: 28575c602fc64814d81bb594574d545f, type: 2}
-  prefab2: {fileID: 1872472323338388, guid: 3da48e01e8675a94795418783ea2277e, type: 2}
+  prefab2: {fileID: 1549430142212324, guid: 8efdcff03ca5b064dad8d366a6883818, type: 2}
   scoreValue: 10
 --- !u!114 &114847073466672190
 MonoBehaviour:
