@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class Player_Shooter : MonoBehaviour {
 
-    private Camera playerCam;
+    public Camera playerCam;
 
 	// Use this for initialization
 	void Start () {
-        playerCam = GetComponent<Camera>();
+      //  playerCam = Camera.main;
 
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
