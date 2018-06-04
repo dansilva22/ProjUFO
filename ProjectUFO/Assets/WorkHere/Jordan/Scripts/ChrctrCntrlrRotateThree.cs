@@ -22,8 +22,8 @@ public class ChrctrCntrlrRotateThree : MonoBehaviour {
         movementSpeed += speedIncrement;
         if (movementSpeed >= maximumSpeed) movementSpeed = maximumSpeed;
 
-        float moveHorizontal = Input.GetAxisRaw("Player1_Horizontal");
-        float moveVertical = Input.GetAxisRaw("Player1_Vertical");
+        float moveHorizontal = Input.GetAxisRaw("Player3_Horizontal");
+        float moveVertical = Input.GetAxisRaw("Player3_Vertical");
 
         Vector3 movement = new Vector3(moveHorizontal, 90.0f, moveVertical);
         transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(movement), 0.15F);
