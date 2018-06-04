@@ -6,6 +6,7 @@ public class UFOController : MonoBehaviour
 {
     public float inputDelay = 0.1f;
     public float forwardVelocity = 12;
+    public float pitchVelocity = 60;
     public float rotateVelocity = 60;
 
     Quaternion targetRotation;
@@ -76,11 +77,18 @@ public class UFOController : MonoBehaviour
         if (Mathf.Abs(turnInput) > inputDelay)
         {
             //turns dat jawn using [a] & [d] respectively
-            rBody.AddTorque(Vector3.up * turnInput * 0.8f);
+            rBody.AddTorque(rotateVelocity * Vector3.up * turnInput);
         }
+        //else if (Mathf.Abs(turnInput) > 80)
+        //{
+            //rBody.angularVelocity = rBody.angularVelocity * rotateVelocity;
+
+        //}
         else
-            // zero velocity
-            rBody.angularVelocity = Vector3.zero;
+        {
+            // slow velocity
+            rBody.angularVelocity = rBody.angularVelocity * rotateVelocity;
+        }
     }
 
     void PitchHold()
@@ -88,9 +96,12 @@ public class UFOController : MonoBehaviour
         if (Mathf.Abs(pitchInputUp) > inputDelay)
         {
             //pitches UFO up using [right click]
-            rBody.rotation *= Quaternion.AngleAxis(rotateVelocity * pitchInputUp * Time.deltaTime, Vector3.left);
+            rBody.rotation *= Quaternion.AngleAxis(pitchVelocity * pitchInputUp * Time.deltaTime, Vector3.left);
 
         }
+        //else
+            // slow velocity
+            //rBody.rotation *= Quaternion.AngleAxis(pitchVelocity * pitchInputUp * Time.deltaTime, Vector3.left * 0.75f);
     }
 
     void PitchHoldNegative()
@@ -98,8 +109,11 @@ public class UFOController : MonoBehaviour
         if (Mathf.Abs(pitchInputDown) > inputDelay)
         {
             //pitches UFO down using [left click]
-            rBody.rotation *= Quaternion.AngleAxis(rotateVelocity * pitchInputDown * Time.deltaTime, Vector3.right);
+            rBody.rotation *= Quaternion.AngleAxis(pitchVelocity * pitchInputDown * Time.deltaTime, Vector3.right);
         }
+        //else
+            // slow velocity
+            //rBody.rotation *= Quaternion.AngleAxis(pitchVelocity * pitchInputDown * Time.deltaTime, Vector3.right * 0.75f);
     }
 
     //void OnCollisionEnter(Collision collision)

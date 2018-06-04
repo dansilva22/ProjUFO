@@ -14,7 +14,7 @@ public class player_shooter_v2 : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-       playerCam = GetComponent<Camera>();
+        playerCam = Camera.main; 
 
         //Cursor.lockState = CursorLockMode.Locked;
        // Cursor.visible = false;
