@@ -1113,6 +1113,25 @@ Transform:
   m_PrefabParentObject: {fileID: 4266842580129670, guid: a4d1d72dc51cad14994027a8350b5472,
     type: 2}
   m_PrefabInternal: {fileID: 110454632}
+--- !u!1 &114012057 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1889712822549186, guid: 48e2cbb10fd5b04429a4d7e66506c52f,
+    type: 2}
+  m_PrefabInternal: {fileID: 1557526285}
+--- !u!114 &114012060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 114012057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58d2be6ca2dc2814ead9f7e9d81b9c5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shootPoint: {fileID: 114012057}
+  lazerExplodey: {fileID: 1485762930557002, guid: ee28cc9d928a71141895848f0ba44fc8,
+    type: 2}
 --- !u!4 &115725154 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4266842580129670, guid: a4d1d72dc51cad14994027a8350b5472,
@@ -6458,6 +6477,21 @@ MonoBehaviour:
   useTransformRotation: 1
   rollAmpFactor: 2
   smoothSpeed: 1
+--- !u!114 &558351155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 558351151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aeb3e8d4af3f4247a8099dd3e9c7cc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputDelay: 0.3
+  forwardVelocity: 55
+  pitchVelocity: 65
+  rotateVelocity: 0.35
 --- !u!1001 &560219715
 Prefab:
   m_ObjectHideFlags: 0
@@ -9843,6 +9877,25 @@ Transform:
   m_PrefabParentObject: {fileID: 4266842580129670, guid: a4d1d72dc51cad14994027a8350b5472,
     type: 2}
   m_PrefabInternal: {fileID: 923854056}
+--- !u!1 &927655953 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1868228790253596, guid: 48e2cbb10fd5b04429a4d7e66506c52f,
+    type: 2}
+  m_PrefabInternal: {fileID: 1557526285}
+--- !u!114 &927655957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 927655953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58d2be6ca2dc2814ead9f7e9d81b9c5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shootPoint: {fileID: 927655953}
+  lazerExplodey: {fileID: 1485762930557002, guid: ee28cc9d928a71141895848f0ba44fc8,
+    type: 2}
 --- !u!4 &930074173 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4214721951259618, guid: 0b2463676884c804089bafeb0a300dfd,
@@ -15914,7 +15967,9 @@ Prefab:
       propertyPath: m_RenderingPath
       value: 3
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114410808811411258, guid: 48e2cbb10fd5b04429a4d7e66506c52f, type: 2}
+    - {fileID: 114761788473973688, guid: 48e2cbb10fd5b04429a4d7e66506c52f, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 48e2cbb10fd5b04429a4d7e66506c52f, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &1558255086
