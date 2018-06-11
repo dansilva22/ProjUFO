@@ -42,12 +42,12 @@ MonoBehaviour:
   ambientOcclusion:
     m_Enabled: 1
     m_Settings:
-      intensity: 1.66
+      intensity: 1.64
       radius: 0.3
       sampleCount: 10
       downsampling: 1
       forceForwardCompatibility: 0
-      ambientOnly: 0
+      ambientOnly: 1
       highPrecision: 0
   screenSpaceReflection:
     m_Enabled: 0
@@ -69,19 +69,19 @@ MonoBehaviour:
       screenEdgeMask:
         intensity: 0.03
   depthOfField:
-    m_Enabled: 0
+    m_Enabled: 1
     m_Settings:
       focusDistance: 10
-      aperture: 5.6
+      aperture: 18.3
       focalLength: 50
       useCameraFov: 0
       kernelSize: 1
   motionBlur:
     m_Enabled: 1
     m_Settings:
-      shutterAngle: 162
+      shutterAngle: 40
       sampleCount: 8
-      frameBlending: 0
+      frameBlending: 0.024
   eyeAdaptation:
     m_Enabled: 0
     m_Settings:
@@ -92,10 +92,10 @@ MonoBehaviour:
       keyValue: 0.25
       dynamicKeyValue: 1
       adaptationType: 0
-      speedUp: 2
-      speedDown: 1
-      logMin: -8
-      logMax: 4
+      speedUp: 2.02
+      speedDown: 0.57
+      logMin: -16
+      logMax: 7
   bloom:
     m_Enabled: 1
     m_Settings:
@@ -121,10 +121,10 @@ MonoBehaviour:
         neutralWhiteClip: 10
       basic:
         postExposure: 0.12
-        temperature: 0
+        temperature: 3
         tint: -20
         hueShift: 0
-        saturation: 1.43
+        saturation: 1.86
         contrast: 1.07
       channelMixer:
         red: {x: 1, y: 0, z: 0}
@@ -284,13 +284,13 @@ MonoBehaviour:
     m_Enabled: 1
     m_Settings:
       spectralTexture: {fileID: 0}
-      intensity: 0.1
+      intensity: 0.13
   grain:
     m_Enabled: 1
     m_Settings:
-      colored: 1
-      intensity: 0.02
-      size: 1
+      colored: 0
+      intensity: 0.1
+      size: 0.37
       luminanceContribution: 0.8
   vignette:
     m_Enabled: 1
@@ -299,7 +299,7 @@ MonoBehaviour:
       color: {r: 0, g: 0, b: 0, a: 1}
       center: {x: 0.5, y: 0.5}
       intensity: 0.35
-      smoothness: 0.2
+      smoothness: 0.23
       roundness: 1
       mask: {fileID: 0}
       opacity: 1
