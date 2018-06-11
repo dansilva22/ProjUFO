@@ -7,8 +7,10 @@ public class player_shooter_v2 : MonoBehaviour
 
     private Camera playerCam;
 
+    //empty game object where ray is drawn from
     public GameObject shootPoint;
 
+    //laser explosion prefab
     public GameObject lazerExplodey; 
 
     // Use this for initialization
@@ -24,16 +26,18 @@ public class player_shooter_v2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.DrawRay(shootPoint.transform.position, shootPoint.transform.forward);
+       // Debug.DrawRay(shootPoint.transform.position, shootPoint.transform.forward);
 
         if (Input.GetButtonDown("Jump"))
         {
-            //Vector3 point = new Vector3(playerCam.pixelWidth / 2, playerCam.pixelHeight / 2, 0);
+        
+            // if player hits space, a ray is drawn from the gameobject you set.
+
             Ray ray = new Ray(shootPoint.transform.position, shootPoint.transform.forward);
 
             RaycastHit hit;
 
-            //Debug.DrawRay(shootPoint.transform.forward, Vector3.forward);
+            // This checks for a hit. If the object has the enemy shot script, it will trigger script on enemy object.
 
             if (Physics.Raycast(ray, out hit))
             {
@@ -56,9 +60,7 @@ public class player_shooter_v2 : MonoBehaviour
 
     private IEnumerator ShotGen(Vector3 pos)
     {
-        //GameObject sphere = GameObject.CreatePrimitive(PrimitiveType.Sphere);
-        //sphere.transform.localScale = new Vector3(0.2f, 0.2f, 0.2f);
-        //sphere.transform.position = pos;
+        
         GameObject hitExplode = Instantiate(lazerExplodey, pos, shootPoint.transform.rotation);
         yield return new WaitForSeconds(1);
 
