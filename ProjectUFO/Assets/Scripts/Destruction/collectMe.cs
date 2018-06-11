@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class collectMe : MonoBehaviour {
 
+    //Attach this to collectables. They should fly to the player on instatiate, and destroy themselves.
+
+   // You can adjust the time it takes those objects to fly to the player.
+
     
     public float flyTime = 1f;
 

@@ -18,6 +18,8 @@ public class Enemy_Shot : MonoBehaviour {
 		//yield return new WaitForSeconds (1.5f);
         GameObject explosion;
         GameObject brains;
+
+        //creates explosion and brains when triggered
         
         for(int i =0; i < 5; i++){
             explosion = Instantiate(prefab, transform.position, Quaternion.identity);
