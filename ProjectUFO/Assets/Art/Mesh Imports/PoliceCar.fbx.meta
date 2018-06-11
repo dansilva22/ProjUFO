@@ -1,0 +1,298 @@
+fileFormatVersion: 2
+guid: 39fcebbcf4370b243a79f2f2fd3b4aed
+timeCreated: 1527991674
+licenseType: Free
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: chassis
+    100002: grill
+    100004: Headlights
+    100006: mirrors
+    100008: pCube1
+    100010: pCube10
+    100012: pCube11
+    100014: pCube12
+    100016: pCube13
+    100018: pCube14
+    100020: pCube15
+    100022: pCube17
+    100024: pCube18
+    100026: pCube2
+    100028: pCube20
+    100030: pCube21
+    100032: pCube22
+    100034: pCube23
+    100036: pCube24
+    100038: pCube25
+    100040: pCube26
+    100042: pCube27
+    100044: pCube3
+    100046: pCube4
+    100048: pCube5
+    100050: pCube6
+    100052: pCube7
+    100054: pCube8
+    100056: pCube9
+    100058: pCylinder1
+    100060: pCylinder2
+    100062: pCylinder3
+    100064: pCylinder4
+    100066: pCylinder5
+    100068: pCylinder6
+    100070: //RootNode
+    100072: polySurface1
+    100074: polySurface10
+    100076: polySurface11
+    100078: polySurface11 1
+    100080: polySurface12
+    100082: polySurface12 1
+    100084: polySurface13
+    100086: polySurface13 1
+    100088: polySurface2
+    100090: polySurface3
+    100092: polySurface4
+    100094: polySurface5
+    100096: polySurface6
+    100098: polySurface7
+    100100: polySurface8
+    100102: polySurface9
+    100104: seats1
+    100106: siren
+    100108: steering
+    100110: transform1
+    100112: transform10
+    100114: transform11
+    100116: transform12
+    100118: transform13
+    100120: transform14
+    100122: transform15
+    100124: transform16
+    100126: transform17
+    100128: transform18
+    100130: transform19
+    100132: transform2
+    100134: transform20
+    100136: transform21
+    100138: transform22
+    100140: transform23
+    100142: transform24
+    100144: transform25
+    100146: transform26
+    100148: transform27
+    100150: transform28
+    100152: transform29
+    100154: transform3
+    100156: transform30
+    100158: transform31
+    100160: transform32
+    100162: transform33
+    100164: transform34
+    100166: transform35
+    100168: transform36
+    100170: transform37
+    100172: transform38
+    100174: transform39
+    100176: transform4
+    100178: transform40
+    100180: transform41
+    100182: transform42
+    100184: transform43
+    100186: transform44
+    100188: transform45
+    100190: transform46
+    100192: transform47
+    100194: transform48
+    100196: transform49
+    100198: transform5
+    100200: transform50
+    100202: transform6
+    100204: transform7
+    100206: transform8
+    100208: transform9
+    100210: wheels
+    400000: chassis
+    400002: grill
+    400004: Headlights
+    400006: mirrors
+    400008: pCube1
+    400010: pCube10
+    400012: pCube11
+    400014: pCube12
+    400016: pCube13
+    400018: pCube14
+    400020: pCube15
+    400022: pCube17
+    400024: pCube18
+    400026: pCube2
+    400028: pCube20
+    400030: pCube21
+    400032: pCube22
+    400034: pCube23
+    400036: pCube24
+    400038: pCube25
+    400040: pCube26
+    400042: pCube27
+    400044: pCube3
+    400046: pCube4
+    400048: pCube5
+    400050: pCube6
+    400052: pCube7
+    400054: pCube8
+    400056: pCube9
+    400058: pCylinder1
+    400060: pCylinder2
+    400062: pCylinder3
+    400064: pCylinder4
+    400066: pCylinder5
+    400068: pCylinder6
+    400070: //RootNode
+    400072: polySurface1
+    400074: polySurface10
+    400076: polySurface11
+    400078: polySurface11 1
+    400080: polySurface12
+    400082: polySurface12 1
+    400084: polySurface13
+    400086: polySurface13 1
+    400088: polySurface2
+    400090: polySurface3
+    400092: polySurface4
+    400094: polySurface5
+    400096: polySurface6
+    400098: polySurface7
+    400100: polySurface8
+    400102: polySurface9
+    400104: seats1
+    400106: siren
+    400108: steering
+    400110: transform1
+    400112: transform10
+    400114: transform11
+    400116: transform12
+    400118: transform13
+    400120: transform14
+    400122: transform15
+    400124: transform16
+    400126: transform17
+    400128: transform18
+    400130: transform19
+    400132: transform2
+    400134: transform20
+    400136: transform21
+    400138: transform22
+    400140: transform23
+    400142: transform24
+    400144: transform25
+    400146: transform26
+    400148: transform27
+    400150: transform28
+    400152: transform29
+    400154: transform3
+    400156: transform30
+    400158: transform31
+    400160: transform32
+    400162: transform33
+    400164: transform34
+    400166: transform35
+    400168: transform36
+    400170: transform37
+    400172: transform38
+    400174: transform39
+    400176: transform4
+    400178: transform40
+    400180: transform41
+    400182: transform42
+    400184: transform43
+    400186: transform44
+    400188: transform45
+    400190: transform46
+    400192: transform47
+    400194: transform48
+    400196: transform49
+    400198: transform5
+    400200: transform50
+    400202: transform6
+    400204: transform7
+    400206: transform8
+    400208: transform9
+    400210: wheels
+    2300000: polySurface11
+    3300000: polySurface11
+    4300000: polySurface11
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

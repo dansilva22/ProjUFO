@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class ChrctrCntrlrRotateTwo : MonoBehaviour {
 
-    public float movementSpeed = 2;
+    public float movementSpeed = 4;
+    public float speedIncrement = 0.08f;
+    public float maximumSpeed = 24f;
     private float timer = 0.0f;
     public float bobbingSpeed = 0.18f;
     public float bobbingAmount = 0.2f;
@@ -16,6 +18,10 @@ public class ChrctrCntrlrRotateTwo : MonoBehaviour {
 
     private void Update()
     {
+
+        movementSpeed += speedIncrement;
+        if (movementSpeed >= maximumSpeed) movementSpeed = maximumSpeed;
+
         float moveHorizontal = Input.GetAxisRaw("Player2_Horizontal");
         float moveVertical = Input.GetAxisRaw("Player2_Vertical");
 
